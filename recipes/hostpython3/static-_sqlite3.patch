@@ -1,0 +1,10 @@
+--- Python-3.7.1/Modules/_sqlite/module.c.orig	2012-10-28 02:30:58.000000000 +0200
++++ Python-3.7.1/Modules/_sqlite/module.c	2012-10-28 02:28:12.000000000 +0200
+@@ -28,6 +28,9 @@
+ #include "prepare_protocol.h"
+ #include "microprotocols.h"
+ #include "row.h"
++#ifndef MODULE_NAME
++#define MODULE_NAME "_sqlite3"
++#endif
+

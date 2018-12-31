@@ -44,7 +44,7 @@ def shprint(command, *args, **kwargs):
     kwargs["_out_bufsize"] = 1
     kwargs["_err_to_out"] = True
     for line in command(*args, **kwargs):
-        stdout.write(line.encode("ascii", "replace").decode())
+        stdout.write(line)
 
 
 def cache_execution(f):

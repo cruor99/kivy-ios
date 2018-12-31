@@ -27,7 +27,7 @@ class Hostpython3Recipe(Recipe):
         self.copy_file("ModulesSetup", "Modules/Setup.local")
         # self.apply_patch("ssize-t-max.patch")
         # self.apply_patch("dynload.patch")
-        # self.apply_patch("static-_sqlite3.patch")
+        self.apply_patch("static-_sqlite3.patch")
         # shutil.copy("Modules/Setup.dist", "Modules/Setup")
         # if "openssl.build_all" in self.ctx.state:
         #     self.append_file("ModulesSetup.openssl", "Modules/Setup.local")
